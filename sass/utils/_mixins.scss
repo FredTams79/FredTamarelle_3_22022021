@@ -1,0 +1,28 @@
+// Boutons Explorer nos restaurants et Commander
+@mixin btn-explore-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient($color-secondary 0%, $color-primary 100%);
+  border-radius: 25px;
+  color: white;
+  width: 60%;
+  height: 50px;
+  margin: auto;
+  font-weight: 500;
+  transition: 750ms;
+  box-shadow: 0 0 15px $color-icon-btn;
+  @include lg {
+    width: 30%;
+  }
+  &:hover {
+    background: linear-gradient(
+      to top,
+      $color-secondary 0%,
+      $color-primary 100%
+    );
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 5px 15px $color-footer;
+  }
+}

@@ -1,0 +1,27 @@
+/* FOOTER */
+footer {
+  background-color: $color-footer;
+  color: white;
+  padding: 25px;
+  line-height: 1.8rem;
+
+  & h3 {
+    font-family: $font-family-main;
+    padding-bottom: 15px;
+  }
+
+  & li {
+    font-family: $font-family-secondary;
+    font-weight: 300;
+  }
+  & i {
+    padding-right: 10px;
+    width: 30px;
+  }
+  ul {
+    @include lg {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

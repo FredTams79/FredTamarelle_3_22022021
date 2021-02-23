@@ -1,0 +1,11 @@
+// breakpoints
+//Tablets and Desktops
+$screen-lg-min: 780px;
+
+// Media Queries
+//Large Devices
+@mixin lg {
+  @media (min-width: $screen-lg-min) {
+    @content;
+  }
+}

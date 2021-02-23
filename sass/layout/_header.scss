@@ -1,0 +1,14 @@
+/* HEADER */
+
+header {
+  text-align: center;
+  margin: 20px 0;
+
+  & img {
+    width: 50%;
+
+    @include lg {
+      width: 30%;
+    }
+  }
+}

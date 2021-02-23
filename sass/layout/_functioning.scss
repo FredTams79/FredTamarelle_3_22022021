@@ -1,0 +1,62 @@
+/* FUNCTIONING */
+
+#functioning {
+  font-family: $font-family-secondary;
+  padding: 20px 0;
+
+  & h1 {
+    margin: 20px;
+  }
+}
+
+ol {
+  list-style: none;
+  counter-reset: li;
+  @include lg {
+    display: flex;
+  }
+}
+
+.btnicon {
+  display: flex;
+  align-items: center;
+  background-color: $color-section;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px $color-btn-local;
+  width: 80%;
+  height: 75px;
+  margin: 7% auto;
+  font-weight: 500;
+  padding: 20px;
+  counter-increment: li;
+  /*position: relative;*/
+  @include lg {
+    max-width: 30%;
+    width: auto;
+    margin: 2% auto;
+  }
+
+  &::before {
+    content: counter(li);
+    color: white;
+    background-color: $color-primary;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -30px;
+    margin-right: 20px;
+    /*padding: 4px;*/
+  }
+  & i {
+    color: $color-icon-btn;
+    padding-right: 15px;
+    width: 35px;
+  }
+}
+
+.fa-mobile-alt {
+  font-size: 1.3rem;
+}

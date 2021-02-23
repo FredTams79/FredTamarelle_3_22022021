@@ -1,3 +1,278 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+ul {
+  list-style: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+span {
+  font-size: 2rem;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  margin: 20px 0;
+}
+header img {
+  width: 50%;
+}
+@media (min-width: 780px) {
+  header img {
+    width: 30%;
+  }
+}
+
+/* LOCAL */
+#localisation {
+  background-color: #f6f6f6;
+  font-family: "Roboto", Georgia, sans-serif;
+  text-align: center;
+  padding-bottom: 40px;
+}
+#localisation h1 {
+  margin: 20px 0;
+  font-size: 1.7rem;
+  display: inline-flex;
+  flex-direction: column;
+}
+@media (min-width: 780px) {
+  #localisation h1 {
+    display: contents;
+  }
+}
+#localisation p {
+  margin-bottom: 20px;
+}
+@media (min-width: 780px) {
+  #localisation p {
+    margin-top: 20px;
+  }
+}
+
+.btnlocal {
+  /*display: flex;
+  justify-content: center;*/
+  background-color: #eaeaea;
+  box-shadow: 0 -5px 5px #e1e1e1;
+  padding: 10px;
+}
+@media (min-width: 780px) {
+  .btnlocal {
+    margin-bottom: 20px;
+  }
+}
+.btnlocal input {
+  border: none;
+  background-color: #eaeaea;
+  color: black;
+  text-align: center;
+  font-family: "Roboto", Georgia, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.btnlocal input::placeholder {
+  color: black;
+}
+
+.fa-map-marker-alt {
+  position: absolute;
+  margin-left: 10px;
+}
+
+.btnexplore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#ff79da 0%, #9356dc 100%);
+  border-radius: 25px;
+  color: white;
+  width: 60%;
+  height: 50px;
+  margin: auto;
+  font-weight: 500;
+  transition: 750ms;
+  box-shadow: 0 0 15px #7e7e7e;
+}
+@media (min-width: 780px) {
+  .btnexplore {
+    width: 30%;
+  }
+}
+.btnexplore:hover {
+  background: linear-gradient(to top, #ff79da 0%, #9356dc 100%);
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 5px 15px #353535;
+}
+
+/* FUNCTIONING */
+#functioning {
+  font-family: "Roboto", Georgia, sans-serif;
+  padding: 20px 0;
+}
+#functioning h1 {
+  margin: 20px;
+}
+
+ol {
+  list-style: none;
+  counter-reset: li;
+}
+@media (min-width: 780px) {
+  ol {
+    display: flex;
+  }
+}
+
+.btnicon {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #eaeaea;
+  width: 80%;
+  height: 75px;
+  margin: 7% auto;
+  font-weight: 500;
+  padding: 20px;
+  counter-increment: li;
+  /*position: relative;*/
+}
+@media (min-width: 780px) {
+  .btnicon {
+    max-width: 30%;
+    width: auto;
+    margin: 2% auto;
+  }
+}
+.btnicon::before {
+  content: counter(li);
+  color: white;
+  background-color: #9356dc;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -30px;
+  margin-right: 20px;
+  /*padding: 4px;*/
+}
+.btnicon i {
+  color: #7e7e7e;
+  padding-right: 15px;
+  width: 35px;
+}
+
+.fa-mobile-alt {
+  font-size: 1.3rem;
+}
+
+/* RESTAURANT */
+#restaurants {
+  background-color: #f6f6f6;
+  font-family: "Roboto", Georgia, sans-serif;
+  padding: 20px 0;
+}
+#restaurants h1 {
+  margin: 20px;
+}
+#restaurants h2 {
+  font-size: 1.3rem;
+}
+
+.restaurant {
+  /*display: flex;
+  flex-direction: column;
+  align-items: center;*/
+  margin: auto;
+}
+@media (min-width: 780px) {
+  .restaurant {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+.restaurant_figure {
+  max-width: 100%;
+  height: 250px;
+  border-radius: 15px;
+  background-color: white;
+  margin: 20px;
+  position: relative;
+}
+.restaurant_new {
+  position: absolute;
+  background-color: #99e2d0;
+  color: #199678;
+  border-radius: 5px;
+  padding: 5px;
+  top: 20px;
+  right: 15px;
+  font-size: 1.4rem;
+}
+.restaurant img {
+  min-width: 100%;
+  height: 70%;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+@media (min-width: 780px) {
+  .restaurant img {
+    width: 300px;
+  }
+}
+.restaurant_figcaption {
+  color: black;
+  padding: 15px;
+  position: relative;
+}
+.restaurant_heart {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 25px;
+  line-height: 1.8rem;
+}
+footer h3 {
+  font-family: "Shrikhand", Cursive, sans-serif;
+  padding-bottom: 15px;
+}
+footer li {
+  font-family: "Roboto", Georgia, sans-serif;
+  font-weight: 300;
+}
+footer i {
+  padding-right: 10px;
+  width: 30px;
+}
+@media (min-width: 780px) {
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

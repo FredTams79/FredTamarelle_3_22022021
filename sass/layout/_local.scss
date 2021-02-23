@@ -1,0 +1,58 @@
+/* LOCAL */
+
+#localisation {
+  background-color: $color-section;
+  font-family: $font-family-secondary;
+  text-align: center;
+  padding-bottom: 40px;
+
+  & h1 {
+    margin: 20px 0;
+    font-size: 1.7rem;
+    display: inline-flex;
+    flex-direction: column;
+    @include lg {
+      display: contents;
+    }
+  }
+  & p {
+    margin-bottom: 20px;
+    @include lg {
+      margin-top: 20px;
+    }
+  }
+}
+
+.btnlocal {
+  /*display: flex;
+  justify-content: center;*/
+  background-color: $color-btn-local;
+  box-shadow: 0 -5px 5px #e1e1e1;
+  padding: 10px;
+  @include lg {
+    margin-bottom: 20px;
+  }
+
+  & input {
+    border: none;
+    background-color: $color-btn-local;
+    color: black;
+    text-align: center;
+    font-family: $font-family-secondary;
+    font-size: 1rem;
+    font-weight: 500;
+
+    &::placeholder {
+      color: black;
+    }
+  }
+}
+
+.fa-map-marker-alt {
+  position: absolute;
+  margin-left: 10px;
+}
+
+.btnexplore {
+  @include btn-explore-order;
+}
