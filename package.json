@@ -10,7 +10,5 @@
   "author": "FredTams79",
   "license": "ISC",
   "browserslist": "last 4 versions",
-  "devDependencies": {
-    "sass": "^1.32.8"
-  }
+  "devDependencies": {}
 }
