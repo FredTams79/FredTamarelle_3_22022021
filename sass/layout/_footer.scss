@@ -8,11 +8,18 @@ footer {
   & h3 {
     font-family: $font-family-main;
     padding-bottom: 15px;
+    @include lg {
+      font-size: 2rem;
+      text-align: center;
+    }
   }
 
   & li {
     font-family: $font-family-secondary;
     font-weight: 300;
+    @include lg {
+      font-size: 1.3rem;
+    }
   }
   & i {
     padding-right: 10px;
@@ -21,7 +28,7 @@ footer {
   ul {
     @include lg {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
     }
   }
 }

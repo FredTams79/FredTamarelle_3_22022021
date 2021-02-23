@@ -6,6 +6,9 @@
 
   & h1 {
     margin: 20px;
+    @include lg {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -32,8 +35,11 @@ ol {
   /*position: relative;*/
   @include lg {
     max-width: 30%;
-    width: auto;
+    width: 100%;
     margin: 2% auto;
+    font-weight: 600;
+    font-size: 1.4rem;
+    height: 100px;
   }
 
   &::before {
@@ -48,7 +54,10 @@ ol {
     justify-content: center;
     margin-left: -30px;
     margin-right: 20px;
-    /*padding: 4px;*/
+    @include lg {
+      width: 35px;
+      height: 35px;
+    }
   }
   & i {
     color: $color-icon-btn;
