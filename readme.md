@@ -14,7 +14,7 @@ Intégrer et dynamiser une page web avec des animations CSS :
 
 [brief complet ici](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/DW_P3/Brief%20cre%CC%81atif%20-%20Ohmyfood!.pdf)
 
-![screenshot du projet](./src/img/screenshot.png)
+![screenshot du projet](./Public/src/img/screenshot.png)
 
 ## Livrables
 
