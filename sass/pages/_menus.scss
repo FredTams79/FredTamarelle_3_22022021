@@ -1,3 +1,5 @@
+/* PAGES MENUS */
+
 /* HEADER */
 
 .logo {
@@ -10,10 +12,17 @@
     position: absolute;
     top: 30px;
     left: 20px;
+    @include lg {
+      font-size: 2rem;
+      top: 36px;
+    }
   }
   &_img {
     font-family: $font-family-main;
     text-align: center;
+    @include lg {
+      font-size: 3rem;
+    }
   }
 }
 
@@ -30,6 +39,15 @@ main {
     object-fit: cover;
     position: relative;
     bottom: -60px;
+    @include lg {
+      clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+      background-size: cover;
+      margin: 40px auto;
+      height: 400px;
+      width: 400px;
+      display: flex;
+      bottom: -20px;
+    }
   }
 }
 /* SECTION MENU*/
@@ -39,14 +57,19 @@ main {
   position: relative;
   &_heart {
     position: absolute;
-    top: 40px;
+    top: 35px;
     right: 38px;
-    font-size: 1.3rem;
+    @include lg {
+      font-size: 3rem;
+    }
   }
   & h2 {
     font-family: $font-family-main;
     padding-top: 30px;
     padding-left: 20px;
+    @include lg {
+      font-size: 2rem;
+    }
   }
   & h3 {
     font-weight: 300;
@@ -58,6 +81,7 @@ main {
     font-size: 1.1rem;
     @include lg {
       margin-left: 24px;
+      font-size: 1.6rem;
     }
   }
 }
@@ -68,6 +92,9 @@ main {
   align-items: center;
   font-weight: 600;
   margin: 0 20px;
+  @include lg {
+    font-size: 1.3rem;
+  }
 
   &_text {
     background-color: white;
@@ -129,5 +156,33 @@ main {
   padding: 40px 0;
   &_child {
     @include btn-explore-order;
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: $color-footer;
+  color: white;
+  padding: 25px;
+  line-height: 1.8rem;
+
+  & h3 {
+    font-family: $font-family-main;
+    padding-bottom: 15px;
+  }
+
+  & li {
+    font-family: $font-family-secondary;
+    font-weight: 300;
+  }
+  & i {
+    padding-right: 10px;
+    width: 30px;
+  }
+  ul {
+    @include lg {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }

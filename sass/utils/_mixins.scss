@@ -10,11 +10,12 @@
   height: 50px;
   margin: auto;
   font-weight: 500;
+  font-size: 1.2rem;
   transition: 750ms;
   box-shadow: 0 0 15px $color-icon-btn;
   @include lg {
-    width: 30%;
-    font-size: 1.3rem;
+    width: 35%;
+    font-size: 1.4rem;
   }
   &:hover {
     background: linear-gradient(
