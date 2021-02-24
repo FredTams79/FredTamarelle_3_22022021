@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./Public/CSS/style.css",
-    "prefix": "postcss ./Public/CSS/style.css --use autoprefixer -d ./Public/CSS/prefixed/"
+    "prefix": "postcss ./Public/CSS/style.css --use autoprefixer -d ./Public/CSS/"
   },
   "author": "FredTams79",
   "license": "ISC",
