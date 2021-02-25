@@ -63,5 +63,24 @@
     position: absolute;
     bottom: 20px;
     right: 20px;
+    overflow: hidden;
+    z-index: 0;
+    cursor: wait;
+    border-radius: 50%;
+    padding: 3px;
+    &::before {
+      content: ""; /* "\f004" : font awesome heart */
+      background: linear-gradient($color-secondary 0%, $color-primary 100%);
+      position: absolute;
+      transform: translate(-50%, -50%) rotate(220deg);
+      transition: all 500ms ease;
+      width: 200%;
+      height: 80%;
+      z-index: -1;
+      opacity: 0;
+    }
+    &:hover::before {
+      opacity: 1;
+    }
   }
 }
