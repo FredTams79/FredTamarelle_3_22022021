@@ -51,6 +51,14 @@ main {
   }
 }
 /* SECTION MENU*/
+
+.menus {
+  @include lg {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
 .menu {
   background-color: $color-section;
   border-radius: 40px 40px 0 0;
@@ -107,6 +115,8 @@ main {
     align-items: center;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: repeat(2, 1fr);
+    animation: menus 500ms ease-in-out both;
+
     @include lg {
       height: 100px;
       min-width: 230px;
@@ -142,10 +152,44 @@ main {
   }
 }
 
-.menus {
-  @include lg {
-    display: flex;
-    justify-content: space-evenly;
+/*Animation des plats*/
+@keyframes menus {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.menu_anim {
+  &_1 {
+    animation-delay: ($anim-delay + $anim-tps * 0);
+  }
+  &_2 {
+    animation-delay: ($anim-delay + $anim-tps * 1);
+  }
+  &_3 {
+    animation-delay: ($anim-delay + $anim-tps * 2);
+  }
+  &_4 {
+    animation-delay: ($anim-delay + $anim-tps * 3);
+  }
+  &_5 {
+    animation-delay: ($anim-delay + $anim-tps * 4);
+  }
+  &_6 {
+    animation-delay: ($anim-delay + $anim-tps * 5);
+  }
+  &_7 {
+    animation-delay: ($anim-delay + $anim-tps * 6);
+  }
+  &_8 {
+    animation-delay: ($anim-delay + $anim-tps * 7);
+  }
+  &_9 {
+    animation-delay: ($anim-delay + $anim-tps * 8);
   }
 }
 
