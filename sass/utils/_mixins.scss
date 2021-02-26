@@ -27,3 +27,45 @@
     box-shadow: 0 5px 15px $color-footer;
   }
 }
+
+//Boutons "j'aime"
+@mixin like {
+  position: absolute;
+  bottom: 22px;
+  right: 24px;
+
+  &_1 {
+    position: absolute;
+  }
+  &_2 {
+    opacity: 0;
+    animation: like_like 1500ms ease-in-out 150ms infinite backwards;
+    cursor: wait;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes like_like {
+  0% {
+    color: $color-secondary;
+    transform: scaleX(0);
+  }
+  25% {
+    color: #e771da;
+    transform: scaleX(0.25);
+  }
+  50% {
+    color: #cc68db;
+    transform: scaleX(0.5);
+  }
+  75% {
+    color: #b260db;
+    transform: scaleX(0.75);
+  }
+  100% {
+    color: $color-primary;
+    transform: scaleX(1);
+  }
+}

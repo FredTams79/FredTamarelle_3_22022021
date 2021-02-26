@@ -55,9 +55,9 @@ main {
   background-color: $color-section;
   border-radius: 40px 40px 0 0;
   position: relative;
-  &_heart {
-    position: absolute;
-    top: 35px;
+  &_like {
+    @include like;
+    top: 33px;
     right: 38px;
     @include lg {
       font-size: 3rem;
