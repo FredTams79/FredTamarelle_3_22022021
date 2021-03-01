@@ -122,6 +122,9 @@ main {
       min-width: 230px;
       max-width: 380px;
     }
+    &:hover {
+      border-radius: 20px 0 0 20px;
+    }
 
     &_1 {
       grid-area: 1 / 1;
@@ -190,6 +193,65 @@ main {
   }
   &_9 {
     animation-delay: ($anim-delay + $anim-tps * 8);
+  }
+}
+
+/* Animation coche */
+.menu_btn_anim {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  &_check {
+    background-color: $color-tertiary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    border-radius: 0 20px 20px 0;
+    width: 20%;
+    margin-top: 15px;
+    margin-right: -20%;
+    opacity: 0;
+    cursor: pointer;
+    &:hover {
+      animation: anim_check 0.5s ease-in-out both;
+      opacity: 1;
+    }
+    &_icon {
+      transform: rotate(180deg);
+      transition: 0.5s;
+      &:hover {
+        transform: rotate(0deg);
+      }
+    }
+    & i {
+      color: $color-tertiary;
+      border: 10px solid white;
+      border-radius: 50%;
+      background-color: white;
+    }
+  }
+}
+
+@keyframes anim_check {
+  0% {
+    margin-right: -20%;
+  }
+  20% {
+    margin-right: -16%;
+  }
+  40% {
+    margin-right: -12%;
+  }
+  60% {
+    margin-right: -8%;
+  }
+  80% {
+    margin-right: -4%;
+  }
+  100% {
+    margin-right: 0;
   }
 }
 
