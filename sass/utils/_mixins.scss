@@ -40,7 +40,7 @@
   }
   &_2 {
     opacity: 0;
-    animation: like_like 1800ms linear 200ms infinite backwards;
+    animation: like_likes 1800ms linear 200ms infinite backwards;
     cursor: wait;
     &:hover {
       opacity: 1;
@@ -68,5 +68,30 @@
   100% {
     color: $color-primary;
     transform: scaleX(1);
+  }
+}
+
+@keyframes like_likes {
+  0% {
+    transform: scale(0);
+    transform-origin: 50% 25%;
+    color: $color-secondary;
+  }
+  25% {
+    color: #e771da;
+    transform: scale(0.25);
+  }
+  50% {
+    color: #cc68db;
+    transform: scale(0.5);
+  }
+  75% {
+    color: #b260db;
+    transform: scale(0.75);
+  }
+
+  100% {
+    transform: scale(1);
+    color: $color-primary;
   }
 }
