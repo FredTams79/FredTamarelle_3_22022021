@@ -51,6 +51,7 @@ main {
   }
 }
 /* SECTION MENU*/
+<<<<<<< HEAD
 
 .menus {
   @include lg {
@@ -59,16 +60,27 @@ main {
   }
 }
 
+=======
+>>>>>>> menuspage
 .menu {
   background-color: $color-section;
   border-radius: 40px 40px 0 0;
   position: relative;
+<<<<<<< HEAD
   &_like {
     @include like;
     top: 33px;
     right: 38px;
     @include lg {
       font-size: 1.3rem;
+=======
+  &_heart {
+    position: absolute;
+    top: 35px;
+    right: 38px;
+    @include lg {
+      font-size: 3rem;
+>>>>>>> menuspage
     }
   }
   & h2 {
@@ -102,7 +114,10 @@ main {
   margin: 0 20px;
   @include lg {
     font-size: 1.3rem;
+<<<<<<< HEAD
     margin: 0 10px;
+=======
+>>>>>>> menuspage
   }
 
   &_text {
@@ -116,6 +131,7 @@ main {
     align-items: center;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: repeat(2, 1fr);
+<<<<<<< HEAD
     animation: menus 700ms cubic-bezier(0.27, 0.01, 0.73, 1) forwards;
     transform: scale(0);
 
@@ -126,6 +142,13 @@ main {
     /*&:hover {
       border-radius: 20px 0 0 20px;
     }*/
+=======
+    @include lg {
+      height: 100px;
+      min-width: 230px;
+      max-width: 380px;
+    }
+>>>>>>> menuspage
 
     &_1 {
       grid-area: 1 / 1;
@@ -156,6 +179,7 @@ main {
   }
 }
 
+<<<<<<< HEAD
 /*Animation des plats*/
 @keyframes menus {
   0% {
@@ -266,6 +290,12 @@ main {
   100% {
     margin-right: 0;
     opacity: 1;
+=======
+.menus {
+  @include lg {
+    display: flex;
+    justify-content: space-evenly;
+>>>>>>> menuspage
   }
 }
 

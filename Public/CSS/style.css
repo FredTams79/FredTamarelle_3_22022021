@@ -244,13 +244,14 @@ header img {
   height: 50px;
   margin: auto;
   font-weight: 500;
+  font-size: 1.2rem;
   transition: 750ms;
   box-shadow: 0 0 15px #7e7e7e;
 }
 @media (min-width: 780px) {
   .btnexplore {
-    width: 30%;
-    font-size: 1.3rem;
+    width: 35%;
+    font-size: 1.4rem;
   }
 }
 .btnexplore:hover {
@@ -521,6 +522,7 @@ main {
 }
 
 /* SECTION MENU*/
+<<<<<<< HEAD
 @media (min-width: 780px) {
   .menus {
     display: grid;
@@ -528,11 +530,14 @@ main {
   }
 }
 
+=======
+>>>>>>> menuspage
 .menu {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
   position: relative;
 }
+<<<<<<< HEAD
 .menu_like {
   position: absolute;
   bottom: 22px;
@@ -554,6 +559,16 @@ main {
 @media (min-width: 780px) {
   .menu_like {
     font-size: 1.3rem;
+=======
+.menu_heart {
+  position: absolute;
+  top: 35px;
+  right: 38px;
+}
+@media (min-width: 780px) {
+  .menu_heart {
+    font-size: 3rem;
+>>>>>>> menuspage
   }
 }
 .menu h2 {
@@ -592,7 +607,10 @@ main {
 @media (min-width: 780px) {
   .menu_btn {
     font-size: 1.3rem;
+<<<<<<< HEAD
     margin: 0 10px;
+=======
+>>>>>>> menuspage
   }
 }
 .menu_btn_text {
@@ -606,16 +624,24 @@ main {
   align-items: center;
   grid-template-columns: 4fr 1fr;
   grid-template-rows: repeat(2, 1fr);
+<<<<<<< HEAD
   animation: menus 700ms cubic-bezier(0.27, 0.01, 0.73, 1) forwards;
   transform: scale(0);
   /*&:hover {
     border-radius: 20px 0 0 20px;
   }*/
+=======
+>>>>>>> menuspage
 }
 @media (min-width: 780px) {
   .menu_btn_text {
     height: 100px;
+<<<<<<< HEAD
     margin-top: 25px;
+=======
+    min-width: 230px;
+    max-width: 380px;
+>>>>>>> menuspage
   }
 }
 .menu_btn_text_1 {
@@ -649,6 +675,7 @@ main {
   padding-right: 8px;
 }
 
+<<<<<<< HEAD
 /*Animation des plats*/
 @keyframes menus {
   0% {
@@ -763,6 +790,15 @@ main {
     opacity: 1;
   }
 }
+=======
+@media (min-width: 780px) {
+  .menus {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+>>>>>>> menuspage
 /* SECTION COMMANDER */
 .btnorder {
   background-color: #f6f6f6;
@@ -779,13 +815,22 @@ main {
   height: 50px;
   margin: auto;
   font-weight: 500;
+<<<<<<< HEAD
+=======
+  font-size: 1.2rem;
+>>>>>>> menuspage
   transition: 750ms;
   box-shadow: 0 0 15px #7e7e7e;
 }
 @media (min-width: 780px) {
   .btnorder_child {
+<<<<<<< HEAD
     width: 30%;
     font-size: 1.3rem;
+=======
+    width: 35%;
+    font-size: 1.4rem;
+>>>>>>> menuspage
   }
 }
 .btnorder_child:hover {
