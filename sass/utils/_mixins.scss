@@ -39,7 +39,7 @@
   }
   &_2 {
     opacity: 0;
-    animation: like_like 1500ms ease-in-out 150ms infinite backwards;
+    animation: like_like 1800ms linear 200ms infinite backwards;
     cursor: wait;
     &:hover {
       opacity: 1;
