@@ -51,16 +51,24 @@ main {
   }
 }
 /* SECTION MENU*/
+
+.menus {
+  @include lg {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .menu {
   background-color: $color-section;
   border-radius: 40px 40px 0 0;
   position: relative;
-  &_heart {
-    position: absolute;
-    top: 35px;
+  &_like {
+    @include like;
+    top: 33px;
     right: 38px;
     @include lg {
-      font-size: 3rem;
+      font-size: 1.3rem;
     }
   }
   & h2 {
@@ -94,6 +102,7 @@ main {
   margin: 0 20px;
   @include lg {
     font-size: 1.3rem;
+    margin: 0 10px;
   }
 
   &_text {
@@ -107,11 +116,16 @@ main {
     align-items: center;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: repeat(2, 1fr);
+    animation: menus 700ms cubic-bezier(0.27, 0.01, 0.73, 1) forwards;
+    transform: scale(0);
+
     @include lg {
       height: 100px;
-      min-width: 230px;
-      max-width: 380px;
+      margin-top: 25px;
     }
+    /*&:hover {
+      border-radius: 20px 0 0 20px;
+    }*/
 
     &_1 {
       grid-area: 1 / 1;
@@ -142,10 +156,116 @@ main {
   }
 }
 
-.menus {
-  @include lg {
+/*Animation des plats*/
+@keyframes menus {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.menu_anim {
+  &_1 {
+    animation-delay: ($anim-delay + $anim-tps * 0);
+  }
+  &_2 {
+    animation-delay: ($anim-delay + $anim-tps * 1);
+  }
+  &_3 {
+    animation-delay: ($anim-delay + $anim-tps * 2);
+  }
+  &_4 {
+    animation-delay: ($anim-delay + $anim-tps * 3);
+  }
+  &_5 {
+    animation-delay: ($anim-delay + $anim-tps * 4);
+  }
+  &_6 {
+    animation-delay: ($anim-delay + $anim-tps * 5);
+  }
+  &_7 {
+    animation-delay: ($anim-delay + $anim-tps * 6);
+  }
+  &_8 {
+    animation-delay: ($anim-delay + $anim-tps * 7);
+  }
+  &_9 {
+    animation-delay: ($anim-delay + $anim-tps * 8);
+  }
+}
+
+/* Animation coche */
+.menu_btn_anim {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  &:hover .menu_btn_text {
+    border-radius: 20px 0 0 20px;
+  }
+  &:hover .menu_btn_anim_check {
+    animation: anim_check 0.5s cubic-bezier(0.46, 0.02, 0.52, 0.96) both;
+    opacity: 1;
+  }
+  &:hover .menu_btn_anim_check_icon {
+    transform: rotate(0deg);
+  }
+  &_check {
+    background-color: $color-tertiary;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    border-radius: 0 20px 20px 0;
+    width: 80px;
+    margin-top: 15px;
+    margin-right: -80px;
+
+    @include lg {
+      height: 100px;
+    }
+
+    &_icon {
+      transform: rotate(180deg);
+      transition: 0.5s cubic-bezier(0.4, 0, 1, 0.67);
+    }
+    & i {
+      color: $color-tertiary;
+      border: 10px solid white;
+      border-radius: 50%;
+      background-color: white;
+    }
+  }
+}
+
+@keyframes anim_check {
+  0% {
+    margin-right: -80px;
+    opacity: 0;
+  }
+  20% {
+    margin-right: -64px;
+    opacity: 0.2;
+  }
+  40% {
+    margin-right: -48px;
+    opacity: 0.4;
+  }
+  60% {
+    margin-right: -32px;
+    opacity: 0.6;
+  }
+  80% {
+    margin-right: -16px;
+    opacity: 0.8;
+  }
+  100% {
+    margin-right: 0;
+    opacity: 1;
   }
 }
 

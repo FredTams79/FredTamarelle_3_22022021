@@ -10,5 +10,7 @@
   "author": "FredTams79",
   "license": "ISC",
   "browserslist": "last 4 versions",
-  "devDependencies": {}
+  "dependencies": {
+    "font-awesome-animation": "^1.1.1"
+  }
 }

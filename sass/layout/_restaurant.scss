@@ -59,9 +59,8 @@
     padding: 15px;
     position: relative;
   }
-  &_heart {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+
+  &_like {
+    @include like;
   }
 }

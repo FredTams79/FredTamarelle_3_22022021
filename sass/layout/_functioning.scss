@@ -41,7 +41,6 @@ ol {
     font-size: 1.4rem;
     height: 100px;
   }
-
   &::before {
     content: counter(li);
     color: white;
@@ -61,11 +60,20 @@ ol {
   }
   & i {
     color: $color-icon-btn;
-    padding-right: 15px;
-    width: 35px;
+    width: 40px;
+  }
+}
+
+.btnicon {
+  &:hover {
+    background-color: lighten($color: $color-primary, $amount: 35%);
+    box-shadow: 7px 7px 2px $color-btn-local;
+    & i {
+      color: $color-primary;
+    }
   }
 }
 
 .fa-mobile-alt {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
