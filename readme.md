@@ -71,3 +71,7 @@ Intégrer et dynamiser une page web avec des animations CSS :
 - Sur Tablette et Desktop, mise en page libre et devra s'adapter aux supports mais pas prioritaires.
 - Validation W3C en HTML et CSS sans erreur.
 - Compatibilité : Dernières versions de Chrome et Firefox.
+
+# Résultat
+
+[Composez votre menu !!!](https://fredtams79.github.io/FredTamarelle_3_22022021/)
