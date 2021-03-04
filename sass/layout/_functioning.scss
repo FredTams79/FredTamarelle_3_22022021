@@ -16,7 +16,9 @@ ol {
   list-style: none;
   counter-reset: li;
   @include lg {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
   }
 }
 
@@ -32,21 +34,19 @@ ol {
   font-weight: 500;
   padding: 20px;
   counter-increment: li;
-  /*position: relative;*/
   @include lg {
-    max-width: 30%;
-    width: 100%;
+    width: 85%;
     margin: 2% auto;
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     height: 100px;
   }
   &::before {
     content: counter(li);
     color: white;
     background-color: $color-primary;
-    width: 23px;
-    height: 23px;
+    min-width: 23px;
+    min-height: 23px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -54,8 +54,9 @@ ol {
     margin-left: -30px;
     margin-right: 20px;
     @include lg {
-      width: 35px;
-      height: 35px;
+      min-width: 35px;
+      min-height: 35px;
+      margin-left: -35px;
     }
   }
   & i {
