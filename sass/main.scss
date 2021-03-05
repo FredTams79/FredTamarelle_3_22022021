@@ -1,9 +1,12 @@
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/animations";
 
 @import "./base/reset";
 
 @import "./responsive/media";
+
+@import "./composants/buttons";
 
 @import "./layout/spinner";
 @import "./layout/header";

@@ -147,17 +147,6 @@ main {
   }
 }
 
-/*Animation des plats*/
-@keyframes menus {
-  0% {
-    transform: scale(0);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
 /* Animation coche */
 .menu_btn_anim {
   display: flex;
@@ -172,6 +161,7 @@ main {
   animation: menus 700ms cubic-bezier(0.27, 0.01, 0.73, 1) forwards;
   box-shadow: 3px 3px 10px 0px $color-icon-btn;
   transform: scale(0);
+
   @include lg {
     height: 100px;
     margin-top: 24px;
@@ -239,33 +229,6 @@ main {
   }
 }
 
-@keyframes anim_check {
-  0% {
-    margin-right: -80px;
-    opacity: 0;
-  }
-  20% {
-    margin-right: -64px;
-    opacity: 0.2;
-  }
-  40% {
-    margin-right: -48px;
-    opacity: 0.4;
-  }
-  60% {
-    margin-right: -32px;
-    opacity: 0.6;
-  }
-  80% {
-    margin-right: -16px;
-    opacity: 0.8;
-  }
-  100% {
-    margin-right: 0;
-    opacity: 1;
-  }
-}
-
 /* SECTION COMMANDER */
 
 .btnorder {
@@ -273,6 +236,9 @@ main {
   padding: 40px 0;
   &_child {
     @include btn-explore-order;
+    &:active {
+      transform: scale(1.1);
+    }
   }
 }
 

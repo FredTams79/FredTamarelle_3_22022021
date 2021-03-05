@@ -34,6 +34,7 @@ ol {
   font-weight: 500;
   padding: 20px;
   counter-increment: li;
+  cursor: pointer;
   @include lg {
     width: 85%;
     margin: 2% auto;
@@ -72,6 +73,9 @@ ol {
     & i {
       color: $color-primary;
     }
+  }
+  &:active {
+    transform: scale(1.1);
   }
 }
 

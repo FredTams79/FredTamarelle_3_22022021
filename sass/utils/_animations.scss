@@ -1,0 +1,159 @@
+// KEYFRAMES
+
+// INDEX
+// Animation Spinner
+
+@keyframes restaurant-loader-pot {
+  from,
+  45%,
+  55%,
+  65%,
+  75%,
+  80%,
+  85%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    transform: rotate(0);
+  }
+
+  45% {
+    transform: translate3d(-4%, -13%, 0) rotate(-13deg);
+  }
+
+  55% {
+    transform: translate3d(1%, -2%, 0) rotate(6deg);
+  }
+
+  65% {
+    transform: translate3d(-2%, -4%, 0) rotate(-3deg);
+  }
+
+  75% {
+    transform: translate3d(2%, 3%, 0) rotate(3deg);
+  }
+
+  80% {
+    transform: translate3d(-2%, 1%, 0) rotate(-2deg);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+@keyframes restaurant-loader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes load {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  to {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+// Animation Like
+
+@keyframes like_likes {
+  0% {
+    transform: scale(0);
+    transform-origin: 50% 25%;
+    color: $color-secondary;
+  }
+  25% {
+    color: #e771da;
+    transform: scale(0.25);
+  }
+  50% {
+    color: #cc68db;
+    transform: scale(0.5);
+  }
+  75% {
+    color: #b260db;
+    transform: scale(0.75);
+  }
+
+  100% {
+    transform: scale(1);
+    color: $color-primary;
+  }
+}
+
+@keyframes like_like {
+  0% {
+    color: $color-secondary;
+    transform: scaleX(0);
+  }
+  25% {
+    color: #e771da;
+    transform: scaleX(0.25);
+  }
+  50% {
+    color: #cc68db;
+    transform: scaleX(0.5);
+  }
+  75% {
+    color: #b260db;
+    transform: scaleX(0.75);
+  }
+  100% {
+    color: $color-primary;
+    transform: scaleX(1);
+  }
+}
+
+// MENUS
+// Animation Plats
+
+@keyframes menus {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+// Animation Coche
+
+@keyframes anim_check {
+  0% {
+    margin-right: -80px;
+    opacity: 0;
+  }
+  20% {
+    margin-right: -64px;
+    opacity: 0.2;
+  }
+  40% {
+    margin-right: -48px;
+    opacity: 0.4;
+  }
+  60% {
+    margin-right: -32px;
+    opacity: 0.6;
+  }
+  80% {
+    margin-right: -16px;
+    opacity: 0.8;
+  }
+  100% {
+    margin-right: 0;
+    opacity: 1;
+  }
+}
