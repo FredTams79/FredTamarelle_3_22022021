@@ -132,7 +132,7 @@
 // Animation Coche
 
 @keyframes anim_check {
-  0% {
+  from {
     margin-right: -80px;
     opacity: 0;
   }
@@ -152,8 +152,16 @@
     margin-right: -16px;
     opacity: 0.8;
   }
-  100% {
+  to {
     margin-right: 0;
     opacity: 1;
   }
+  /* 0% {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }*/
 }

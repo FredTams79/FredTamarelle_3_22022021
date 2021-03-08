@@ -158,8 +158,9 @@ main {
   height: 75px;
   border-radius: 20px;
   margin-top: 15px;
-  animation: menus 700ms cubic-bezier(0.27, 0.01, 0.73, 1) forwards;
   box-shadow: 3px 3px 10px 0px $color-icon-btn;
+  //animation plats
+  animation: menus 700ms cubic-bezier(0.27, 0.01, 0.73, 1) forwards;
   transform: scale(0);
 
   @include lg {
@@ -196,8 +197,9 @@ main {
   }
 
   &:hover .menu_btn_anim_check {
-    animation: anim_check 0.5s cubic-bezier(0.46, 0.02, 0.52, 0.96) both;
+    /*animation: anim_check 0.5s cubic-bezier(0.46, 0.02, 0.52, 0.96) both;*/
     opacity: 1;
+    margin-right: 0;
   }
   &:hover .menu_btn_anim_check_icon {
     transform: rotate(0deg);
@@ -211,7 +213,8 @@ main {
     border-radius: 0 20px 20px 0;
     width: 80px;
     margin-right: -80px;
-
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.46, 0.02, 0.52, 0.96);
     @include lg {
       height: 100px;
     }
