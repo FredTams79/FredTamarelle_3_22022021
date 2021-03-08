@@ -167,6 +167,9 @@ main {
     height: 100px;
     margin-top: 24px;
   }
+  &:active {
+    box-shadow: 5px 5px 10px 0px $color-icon-btn;
+  }
   /* Animation des plats */
   &_1 {
     animation-delay: ($anim-delay + $anim-tps * 0);
